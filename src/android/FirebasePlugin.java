@@ -544,6 +544,8 @@ public class FirebasePlugin extends CordovaPlugin {
         bundle.putFloat(key, ((Number) value).floatValue());
       } else {
         bundle.putString(key, value.toString());
+        Log.d(TAG, "logEvent key: " + key);
+        Log.d(TAG, "logEvent value: " + value.toString());
       }
     }
 
